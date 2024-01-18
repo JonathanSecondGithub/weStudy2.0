@@ -1,0 +1,351 @@
+.study-group-title.events-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    border-bottom: 1px solid var(--side-panel-text);
+    background-color: var(--main-container);
+
+    position: fixed;
+    top: 0;
+    height: 111px;
+    z-index: 20;
+}
+
+.study-group-title.events-title-container > h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+#create-event {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#create-event:hover {
+    border-radius: 7px;
+    background-color: var(--side-panel-hover);
+}
+
+.all-events-container {
+    display: flex;
+    height: 100%;
+    padding: 50px;
+    width: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    max-width: 100vw;
+}
+
+.event-container {
+    border-radius: 5px;
+    min-height: fit-content;
+    margin-bottom: 40px;
+
+    display: grid;
+    grid-template-columns: 200px 40vw;
+    width: calc(200px + 40vw);
+    /* min-width: 60vw; */
+    /* max-width: 60vw; */
+
+    border-radius: 10px;
+    position: relative;
+}
+
+.event-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+h3.event-day {
+    font-size: 30px;
+}
+
+h3.event-month {
+    font-size: 25px;
+}
+
+.event-summary {
+    background-color: var(--top-highlight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px 0 0 5px;
+}
+
+.event-body {
+    position: relative;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 30px;
+
+    border-radius: 0 5px 5px 0;
+
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.event-title-description-container {
+    padding-right: 15px;
+    /* max-width: 383.5px; */
+    max-width: 30vw;
+}
+
+.event-summary > h3 {
+    cursor: default;
+}
+
+.event-title-description-container > h3 {
+    font-size: 30px;
+    cursor: default;
+}
+
+.event-summary-and-cal-container > h3 {
+    color: var(--main-container);
+    font-size: 30px;
+    cursor: default;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.event-title-description-container > h4 {
+    font-size: 15px;
+    cursor: default;
+}
+
+.event-title-description-container > h3,
+.event-title-description-container > h4,
+.event-body p {
+    cursor: default;
+    color: var(--main-container);
+}
+
+.event-container:hover .event-btn-container {
+    opacity: 1;
+}
+
+.event-btn-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    padding: 10px;
+    opacity: 0;
+}
+
+#edit-event {
+    margin-right: 10px;
+}
+
+#edit-event,
+#delete-event {
+    cursor: pointer;
+}
+
+#edit-event > i,
+#delete-event > i {
+    color: var(--side-panel-text);
+}
+
+#edit-event > i:hover,
+#delete-event > i:hover {
+    transform: scale(1.1);
+}
+
+#edit-event > i:hover {
+    color: var(--side-panel-selected);
+}
+
+#delete-event > i:hover {
+    color: var(--terra-cotta);
+}
+
+
+#join-event {
+    background-color: var(--side-panel-selected);
+}
+
+#leave-event {
+    background-color: var(--terra-cotta);
+}
+
+#join-event,
+#leave-event {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    width: 20px;
+}
+
+#join-event:hover,
+#leave-event:hover {
+    transform: scale(1.05);
+}
+
+.calendar-container > button > i {
+    color: white;
+}
+
+
+
+.calendar-container > button:hover {
+    transform: scale(1.05);
+}
+
+.event-label {
+    border-bottom: 1px dotted var(--main-container);;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.event-section {
+    padding: 10px 0;
+}
+
+.event-label + p {
+    font-style: italic;
+}
+
+div.event-label.attendees-label {
+    padding-bottom: 5px;
+}
+
+.attendees-list {
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+
+.attendees-list > .attendees-label {
+    color: var(--main-container);
+}
+
+.event-join-add-btns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.event-description {
+    font-weight: normal;
+    font-style: italic;
+/*
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.events-dash-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+
+    grid-area: content;
+}
+
+
+#join-event,
+#leave-event {
+    width: 70px;
+    margin-left: 30px;
+}
+
+.event-title-description-container > h3 {
+    display: flex;
+    align-items: center;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.google-calendar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    background-color: transparent;
+    padding-right: 10px;
+    position: relative;
+}
+
+.google-calendar-icon > img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.google-calendar-icon > img:hover {
+    transform: scale(1.1);
+}
+
+.add-to-google-cal {
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -115px;
+    width: 140px;
+    padding: 0 5px;
+    background-color: var(--side-panel-selected);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    font-weight: normal;
+}
+
+.google-calendar-icon > img:hover + .add-to-google-cal {
+    opacity: 1;
+}
+
+.attendee-pics-container {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.attendee-pic-container {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rhythm);
+    margin: 5px;
+}
+
+.attendee-pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-summary-and-cal-container {
+    display: flex;
+    align-items: center;
+}

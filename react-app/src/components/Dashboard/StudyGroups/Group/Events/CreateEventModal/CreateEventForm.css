@@ -1,0 +1,30 @@
+.event-form-container {
+    width: 500px;
+}
+
+form > .event-btns-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.event-btns-container > button {
+    width: 100%;
+}
+
+#event-submit-cancel {
+    width: 100% !important;
+}
+
+button#event-submit {
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: var(--side-panel-selected);
+    color: white;
+    margin-top: 10px;
+}
+
+button#event-submit:hover {
+    transform: scale(1.1);
+}

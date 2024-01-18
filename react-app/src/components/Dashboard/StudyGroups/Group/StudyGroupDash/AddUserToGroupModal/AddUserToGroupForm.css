@@ -1,0 +1,44 @@
+.form-container.add-user-form {
+    padding: 40px;
+    position: relative;
+}
+
+button#add-user,
+button#add-room,
+button#edit-room-submit,
+button#create-note-submit,
+button#save-prof-pic {
+    font-size: 20px;
+    background-color: var(--side-panel-selected);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.add-user-input,
+.add-room-input {
+    border: 1px solid gray !important;
+    border-radius: 5px !important;
+}
+
+button#add-user:hover,
+button#add-room:hover,
+button#edit-room-submit:hover,
+button#create-note-submit:hover,
+button#save-prof-pic:hover {
+    transform: scale(1.1);
+}
+
+.search-results {
+    padding: 10px 10px 0 10px;
+}
+
+.search-results > p {
+    font-style: italic;
+    color: var(--side-panel);
+}
+
+.suggestion {
+    color: var(--side-panel);
+    padding-left: 10px;
+}

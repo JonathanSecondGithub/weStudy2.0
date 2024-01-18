@@ -1,0 +1,271 @@
+/* TODO Add site wide styles */
+@import url("https://use.typekit.net/kyk0anv.css");
+
+:root {
+	--raisin-black: #221D23;
+	--oxford-blue: #0B132B;
+	--rhythm: #767B91;
+	--skobeloff: #0F7173;
+	--powder-blue: #A8DADC;
+	--honeydew: #F1FAEE;
+	--red-violet: #912F40;
+	--terra-cotta: #ED6A5A;
+
+	--base-color: #1A1D21;
+	--main-text-color: #CFD0D1;
+	--nav-color: #912F40;
+	--button-color: #0F7173;
+	--drop-down: #383D59;
+
+	/* CHOCO MINT SLACK THEME */
+	--side-panel: #212121;
+	--side-panel-hover: #353330;
+	--side-panel-selected: #5DB09D;
+	--side-panel-text: #ABABAB;
+
+	--main-container: #1A1D21;
+	--main-container-hover: #222529;
+	--main-container-text: white;
+
+	--top-highlight: #353330;
+	--top-lighter-highlight: #646260;
+	--header-text: #CFD0D1;
+
+	--chat-box-container: #222529;
+	--chat-box-placeholder: #6F7073;
+	--chat-box-hover: #222529;
+	--chat-container: #6b5c6e5d;
+
+	--send-message: #007A5A;
+	/* CHOCO MINT SLACK THEME */
+
+	--login-signup-form-width: 425px;
+
+	--toastify-color-light: #383D59;
+}
+
+*,
+body,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: proxima-nova, sans-serif;
+	color: var(--main-text-color);
+
+	transition: all 0.2s ease-in-out;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	background-color: var(--main-container);
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+  }
+
+button {
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 3px;
+	color: black;
+}
+
+.whole-page-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: var(--base-color);
+	position: absolute;
+	height: 100vh;
+}
+
+.profile-pic-div {
+	width: 78px;
+	height: 78px;
+	border-radius: 20%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: aliceblue;
+}
+
+.profile-pic-div img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+form > div {
+	color: var(--raisin-black);
+}
+
+form > div > div {
+	color: var(--raisin-black);
+}
+
+input {
+	color: var(--raisin-black);
+}
+
+.errors-container {
+	color: red;
+	font-size: 13px;
+	padding-left: 10px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+button#create-group:disabled,
+button#add-room:disabled,
+button#edit-room-submit:disabled,
+button#event-submit:disabled,
+button#create-note-submit:disabled {
+	transform: none;
+	opacity: 0.5;
+	cursor: default;
+}
+
+
+@media screen and (max-width: 1280px) and (min-width: 601px) {
+    .form-container2,
+    .signup-form2,
+    .login-form2,
+    .show-signup,
+    .hide-signup,
+    .current-form-container {
+        width: 400px;
+        min-height: calc(400px * 1.1);
+    }
+}
+
+
+@media only screen and (max-width: 912px) {
+	.splash-page-container-2 {
+		grid-template-areas: 'header'
+		'form'
+		'footer';
+
+		grid-template-columns: 100%;
+		grid-template-rows: 20% 60% 20%;
+	}
+
+	.form-container2,
+    .signup-form2,
+    .login-form2,
+    .show-signup,
+    .hide-signup,
+    .current-form-container {
+        width: 400px;
+		max-width: 100%;
+        /* height: calc(400px * 1.1); */
+    }
+
+	.title-container-2 {
+		grid-area: header;
+		width: 100%;
+	}
+
+	.title-text-container-2 {
+		position: relative;
+		height: fit-content;
+		width: 100%;
+		bottom: 33%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.forms-container {
+		grid-area: form;
+		bottom: 24vh;
+	}
+
+
+	.current-form-container {
+		padding: 30px 0;
+		padding-left: 0;
+	}
+
+	.about-links {
+		position: fixed;
+		bottom: 3%;
+		display: flex;
+		height: fit-content;
+		padding: 0;
+	}
+
+	.left-container-links {
+		padding: 0;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.developer-name-text {
+		padding: 10px;
+		display: grid;
+		grid-template-areas: 'left right';
+		grid-template-columns: 50% 50%;
+		position: relative;
+	}
+
+	.developer-name-text > p {
+		grid-area: left;
+		padding-left: 20px;
+	}
+
+	.all-technologies {
+		display: none;
+	}
+
+	.github-linkedin {
+		grid-area: right;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.github-linkedin > a > i {
+		font-size: 35px;
+		margin: 0 10px;
+
+	}
+
+	p#developed-by {
+		position: absolute;
+		bottom: 40px;
+	}
+
+}
+
+@media only screen and (max-width: 600px) and (min-height: 720px) {
+	p#fiona-choi {
+		width: 300px;
+
+	}
+
+	p#developed-by {
+		bottom: 50px;
+	}
+}

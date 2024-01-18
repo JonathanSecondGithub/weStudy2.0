@@ -1,0 +1,142 @@
+.splash-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: var(--main-container);
+}
+
+.title-container {
+    align-self: flex-start;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 40vh;
+    border-top: 1px solid var(--side-panel-text);
+    border-bottom: 1px solid var(--side-panel-text);
+    padding: 30px 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+}
+
+.title-image {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -10%;
+}
+
+.title-image > h1 {
+    font-family: proxima-nova, sans-serif;
+    font-size: 200px;
+}
+
+.title-container > h4 {
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: proxima-nova-condensed, sans-serif;
+    color: var(--side-panel-text);
+}
+
+.title-image > img {
+    width: 175px;
+    margin-left: 50px;
+}
+
+.splash-page-nav-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.splash-page-nav-links > li {
+    padding: 0 20px;
+}
+
+#login,
+#signup {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#login:hover,
+#signup:hover {
+    color: var(--powder-blue);
+    transform: scale(1.1);
+}
+
+.splash-page-footer {
+    background-color: var(--header-text);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologies {
+    display: flex;
+    padding: 10px 24px;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    border-bottom: 1px dashed var(--main-container);
+    min-width: 550px;
+}
+
+.technologies li {
+    color: var(--main-container);
+    font-size: 15px;
+}
+
+.copyright {
+    color: var(--main-container);
+    padding: 10px 0px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    min-width: 260px;
+}
+
+.footer-text {
+    color: var(--main-container);
+}
+
+.about-me {
+    display: flex;
+    color: var(--main-container);
+}
+
+.about-me li {
+    margin: 0 10px;
+    color: var(--main-container);
+
+}
+
+.fa-github,
+.fa-linkedin {
+    font-size: 18px;
+    transition-duration: 0.2s;
+    color: var(--main-container);
+}
+
+.copyright > .footer-text {
+    padding-right: 20px;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover,
+.copyright > .footer-text:hover {
+    color: var(--side-panel-selected);
+    transform: scale(1.1);
+}

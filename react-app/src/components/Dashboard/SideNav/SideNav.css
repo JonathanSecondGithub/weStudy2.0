@@ -1,0 +1,314 @@
+.active li {
+    background-color: var(--side-panel-selected);
+    width: 100%;
+    color: var(--main-container-text) !important;
+}
+
+.active li p {
+    color: var(--main-container-text) !important;
+}
+
+.active > li > .fa-door-open,
+.active > li > i,
+.active > li > .fa-file-alt,
+.active > li > .fa-users,
+.active > li > .fa-calendar-alt,
+.active > li > .fa-images {
+    color: var(--main-container-text) !important;
+}
+
+.active li:hover {
+    background-color: var(--side-panel-selected) !important;
+}
+
+
+
+.side-panel-nav-links > a > li:hover,
+.room-container:hover,
+.side-panel-nav-links > ul > a > li.note-title:hover,
+.side-panel-nav-links > li.create-study-group:hover {
+    background-color: var(--side-panel-hover);
+}
+
+.side-panel-nav-links > a > li,
+.room-container,
+.side-panel-nav-links > ul > a > li,
+.side-panel-nav-links > li.create-study-group {
+    padding: 10px 40px;
+    color: var(--side-panel-text);
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.room-container > p {
+    color: var(--side-panel-text);
+}
+
+.note-title {
+    display: flex;
+    align-items: center;
+}
+
+.fa-file-alt {
+    color: var(--side-panel-text);
+}
+
+.side-panel-nav-links > li {
+    padding: 20px 20px 10px 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--header-text);
+
+    cursor: default;
+
+    position: relative;
+}
+
+.side-panel-nav-links > li > #create-room,
+.side-panel-nav-links > li > #create-note,
+.side-panel-nav-links > li > #create-album {
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    color: var(--side-panel-text);
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#create-room:hover,
+#create-note:hover,
+#create-album:hover {
+    border-radius: 7px;
+    background-color: var(--side-panel-hover);
+}
+
+#home-link {
+    font-weight: bold;
+    padding: 10px 0 10px 20px;
+    color: var(--header-text);
+}
+
+.room-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+p.side-nav-overflow-control {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.room-container > .fa-door-open,
+.room-container > i,
+.note-title > .fa-file-alt,
+.fa-users,
+.fa-images {
+    color: var(--side-panel-text);
+    padding-right: 10px;
+    font-style: normal;
+}
+
+.active-users-num {
+    padding-left: 10px;
+}
+
+.fa-calendar-alt {
+    padding-right: 15px;
+}
+
+.room-with-btns {
+    position: relative;
+}
+
+.room-with-btns:hover > .btn-container {
+    opacity: 1;
+}
+
+.btn-container {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    display: flex;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.btn-container:hover ~ a li {
+    background-color: var(--side-panel-hover);
+}
+
+.btn-container > div {
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+
+#edit-room,
+#delete-room {
+    transition: all 0.2s ease-in-out;
+}
+
+#edit-room > i,
+#delete-room > i {
+    color: var(--side-panel-text);
+}
+
+#edit-room:hover,
+#delete-room:hover {
+    transform: scale(1.1);
+}
+
+#edit-room > i:hover,
+#delete-room > i:hover {
+    color: var(--main-container-text);
+}
+
+/*
+li.logout-btn-container {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#logout {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--header-text);
+}
+#logout > i {
+    padding-left: 10px;
+    color: var(--header-text);
+}
+
+.logout-btn-container:hover {
+    background-color: var(--side-panel-hover);
+} */
+
+#logout {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#logout > i {
+    font-size: 20px;
+}
+
+#logout > i:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+
+.user-pic-name-container {
+    width: 100%;
+    height: 111px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.user-profile-edit-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.username-text {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+div#edit-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.user-profile-nav:hover + div#edit-user {
+    opacity: 1;
+}
+
+.user-profile-nav:hover {
+    opacity: 0.4;
+}
+
+div#edit-user:hover ~ .user-profile-nav {
+    opacity: 0.4
+}
+
+div#edit-user:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+div#edit-user > i {
+    color: var(--header-text);
+}
+
+.developer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 30px 30px 30px;
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+
+    /* box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.267); */
+}
+
+.developer > p,
+.developer > a {
+    font-style: italic;
+    padding-top: 5px;
+}
+
+.developer > p {
+    cursor: default;
+}
+
+.developer > p > span > a > i {
+    color: var(--side-panel-text);
+    padding-left: 10px;
+}
+
+.developer > a:hover {
+    color: white;
+}
+
+
+.fa-github:hover,
+.fa-linkedin:hover {
+    color: white;
+    transform: scale(1.1);
+}
